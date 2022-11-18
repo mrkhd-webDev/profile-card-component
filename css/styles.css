@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background: hsl(185deg, 75%, 39%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -290px -490px, 680px 380px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-position: -765px -590px, 145px 270px;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  max-height: 375px;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+  z-index: 1;
+}
+.card .card-profile {
+  display: flex;
+  flex-direction: column;
+}
+.card .card-profile .card-header svg {
+  border-radius: 15px 15px 0px 0px;
+  z-index: 999;
+}
+.card .card-profile .card-image {
+  position: relative;
+}
+.card .card-profile .card-image img {
+  position: absolute;
+  border-radius: 50%;
+  translate: calc(175px - 50%) -50%;
+  border: 5px solid hsl(0deg, 0%, 100%);
+}
+.card .card-profile .card-body {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-profile .card-body h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: hsl(229deg, 23%, 23%);
+}
+.card .card-profile .card-body h1 span {
+  font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
+}
+.card .card-profile .card-body h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
+  margin-bottom: 25px;
+}
+.card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid hsla(227deg, 10%, 46%, 0.2);
+  padding: 25px 50px;
+}
+.card .card-footer h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: hsl(229deg, 23%, 23%);
+}
+.card .card-footer p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.09em;
+  color: hsl(0deg, 0%, 59%);
+}
+.card .card-footer .followers,
+.card .card-footer .likes,
+.card .card-footer .photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
